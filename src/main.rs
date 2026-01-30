@@ -4,13 +4,11 @@ use std::io;
 use std::io::Write;
 
 fn main() {
-
     let mut file = OpenOptions::new()
         .append(true)
         .create(true)
         .open("fil.txt")
         .expect("Kunne ikke åbne fil");
-
 
     let mut choice_input = String::new();
     let mut input = String::new();
@@ -36,11 +34,9 @@ fn main() {
                 let content = fs::read_to_string("fil.txt")
                     .expect("Kunne ikke læse filen");
 
-
                 println!("\n--- Indhold starter ---");
                 println!("{}", content);
                 println!("\n--- Indhold slutter ---");
-
             }
 
             2 => for _ in 0..5 {

@@ -12,7 +12,7 @@ fn main() {
 
     let mut choice_input = String::new();
     let mut input = String::new();
-
+    
     loop {
         choice_input.clear();
 
@@ -36,7 +36,7 @@ fn main() {
 
                 println!("\n--- Indhold starter ---");
                 println!("{}", content);
-                println!("\n--- Indhold slutter ---");
+                println!("--- Indhold slutter ---");
             }
 
             2 => for _ in 0..5 {
